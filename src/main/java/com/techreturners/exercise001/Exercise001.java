@@ -4,16 +4,18 @@ import java.util.List;
 
 public class Exercise001 {
     public String capitalizeWord(String word) {
-        // Add your code here
-        return "";
+
+        return Character.toUpperCase(word.charAt(0))+ word.substring(1);
     }
 
     public String generateInitials(String firstName, String lastName) {
-        return "";
+      
+        return (firstName.substring(0,1)).toUpperCase() + "." + (lastName.substring(0,1)).toUpperCase();
     }
 
     public double addVat(double originalPrice, double vatRate) {
-        return 0.0;
+
+        return 0;
     }
 
     public String reverse(String sentence) {
