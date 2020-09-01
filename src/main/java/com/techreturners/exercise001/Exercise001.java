@@ -19,7 +19,17 @@ public class Exercise001 {
     }
 
     public String reverse(String sentence) {
-        return "";
+        char [] array= new char [sentence.length()];
+        int i=0;
+        int j=sentence.length()-1;
+
+        while (i<sentence.length()){
+
+            array[i] = sentence.charAt(j); 
+            i++;
+            j--;
+        }
+        return String.valueOf(array);
     }
 
     public int countLinuxUsers(List<User> users) {
