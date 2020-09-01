@@ -32,7 +32,7 @@ public class Exercise001Test {
         assertEquals("L.M", ex001.generateInitials("luca", "manson"));
     }
    
-    @Ignore
+ 
     @Test
     public void checkAddVat() {
         Exercise001 ex001 = new Exercise001();
