@@ -50,7 +50,7 @@ public class Exercise001Test {
         assertEquals("?siht od ot tnaw neve uoy dluow yhw", ex001.reverse("why would you even want to do this?"));
     }
    
-    @Ignore
+ 
     @Test
     public void checkLinuxUsers() {
         Exercise001 ex001 = new Exercise001();

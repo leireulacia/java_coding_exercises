@@ -33,6 +33,25 @@ public class Exercise001 {
     }
 
     public int countLinuxUsers(List<User> users) {
-        return 0;
+
+        int count=0;
+        String str=" ";
+        User usr = new User(" "," "," ");
+
+
+        for (int i = 0; i < users.size(); i++) {
+
+           usr= (User) users.get(i); // Get the i User of the List and cast it to User
+
+            str= (usr.getType()).toUpperCase(); //Get the type of the Object User and Capitalize the word
+
+                if (str.equals("LINUX")) {
+                count++;
+
+                }
+        }
+    
+        return count;
+
     }
 }
