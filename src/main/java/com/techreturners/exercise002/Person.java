@@ -1,7 +1,7 @@
 package com.techreturners.exercise002;
 
 public class Person {
-    private String firstName;
+    private String firstName; //NOTE: The class attributes are private
     private String lastName;
     private String city;
     private int age;
