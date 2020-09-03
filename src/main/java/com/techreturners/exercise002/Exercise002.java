@@ -4,11 +4,9 @@ public class Exercise002 {
 
     public boolean isFromManchester(Person person) {
    
-        return person.getCity()=="Manchester"? true:false;
-
+    return (person.getCity()).equalsIgnoreCase("Manchester")? true:false;
      /*  The statement above replace the statement:
-
-        if (person.getCity()=="Manchester"){
+        if (person.getCity()).equalsIgnoreCase("Manchester")){
             return true;
         }else{
             return false;
@@ -17,11 +15,9 @@ public class Exercise002 {
 
     public boolean canWatchFilm(Person person, int ageLimit) {
 
-        return person.getAge()>=ageLimit?true:false;
-
-       /* The statement above replace the statement:
-       
-       if (person.getAge()>=ageLimit){
+    return person.getAge()>=ageLimit?true:false;
+     /* The statement above replace the statement: 
+        if (person.getAge()>=ageLimit){
             return true;
         }else{
             return false;

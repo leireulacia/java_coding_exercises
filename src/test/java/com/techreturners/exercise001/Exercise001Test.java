@@ -58,6 +58,7 @@ public class Exercise001Test {
         User u2 = new User("Paul", "Windows 95", "Windows");
         User u3 = new User("Sheila", "CentOS 7", "Linux");
         User u4 = new User("Pedro", "Ubuntu 18.04", "Linux");
+        User u5 = new User("Alice", "Ubuntu 18.04", "LINUX");
 
 
         List<User> users = new ArrayList<User>();
@@ -71,5 +72,13 @@ public class Exercise001Test {
         users.add(u3);
         users.add(u4);
         assertEquals(2, ex001.countLinuxUsers(users));
+
+        users = new ArrayList<User>();
+        users.add(u1);
+        users.add(u2);
+        users.add(u3);
+        users.add(u4);
+        users.add(u5);
+        assertEquals(3, ex001.countLinuxUsers(users));
     }
 }
